@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: "Maitree", serif;
+}
+
+h1 {
+  margin-bottom: 0;
+  text-align: center;
+  color: #43a047;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  background: #43a047;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.gallery .photo {
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 250px;
+  width: 280px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery .photo .text-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 96%;
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin: 0;
+}
+
+.gallery .photo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.gallery .photo svg {
+  align-self: flex-end;
+}
+
+.p-3 {
+  padding: 30px;
+}
+
+.no-favorites-text {
+  text-align: center;
+  color: #777;
+}
